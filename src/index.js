@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import Media from './playlist/components/Media';
+import Playlist from './playlist/components/playlist';
+import data from './api.json';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<Media title={2000000} author='Jesus Montero Cabrera' image='./images/bitcoin.jpg'/>, document.getElementById('root'));
+ReactDOM.render(<Playlist data={data}/>, document.getElementById('root'));
 registerServiceWorker();
